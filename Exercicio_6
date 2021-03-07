@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main(void) {
+
+  float entrada_r1 , entrada_r2 , saida_req;
+
+  printf("Entre com o valor do Resistor 1:\n");
+  scanf("%f", &entrada_r1);
+
+  printf("Entre com o valor do Resistor 2:\n");
+  scanf("%f", &entrada_r2);
+
+  saida_req = entrada_r1 * entrada_r2 / entrada_r1 + entrada_r2;
+
+  printf("Req: %.2f\n",saida_req);
+  return 0;
+}
