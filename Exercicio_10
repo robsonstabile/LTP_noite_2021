@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+
+int main(void) {
+
+  float entrada_pi ,entrada_vi,entrada_t, entrada_a, saida_pf;
+
+  printf("Entre com o valor da posição inicial [m]:\n");
+  scanf("%f", &entrada_pi);
+
+  printf("Entre com o valor da Velocidade inicial [ms]:\n");
+  scanf("%f", &entrada_vi);
+
+  printf("Entre com o valor do tempo [s]:\n");
+  scanf("%f", &entrada_t);
+
+  printf("Entre com o valor da aceleração [ms]:");
+  scanf("%f", &entrada_a);
+
+  saida_pf = entrada_pi + (entrada_vi * entrada_t) + (entrada_a * (entrada_t * entrada_t)/2);
+
+  printf("posição final [m]: %.2f\n",saida_pf);
+
+  return 0;
+}
