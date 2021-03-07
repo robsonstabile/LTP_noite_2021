@@ -1,0 +1,14 @@
+#include <stdio.h>
+
+int main(void) {
+
+  float entrada_c , saida_f;
+
+  printf("Entre com o valor em °C:\n");
+  scanf("%f" , &entrada_c);
+
+  saida_f = entrada_c * 1.8 + 32 ;
+
+  printf("Temperatura em °F:%.2f\n", saida_f);
+  return 0;
+}
