@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+
+int main(void) {
+
+  float entrada_vi ,entrada_a, entrada_t, saida_vf;
+
+  printf("Entre com o valor da velocidade inicial [vi]:\n");
+  scanf("%f", &entrada_vi);
+
+  printf("Entre com o valor da aceleração [ms]:\n");
+  scanf("%f", &entrada_a);
+
+  printf("Entre com o valor do tempo [s]:\n");
+  scanf("%f", &entrada_t);
+
+  saida_vf = entrada_vi + (entrada_a * entrada_t);
+
+  printf("Velocidade final: %.2f\n",saida_vf);
+
+  return 0;
+}
