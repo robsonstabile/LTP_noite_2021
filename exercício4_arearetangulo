@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main(void) {
+  float e_base , e_altura , s_area;
+
+  printf("entre como valor da base:\n");
+  scanf("%f", &e_base);
+
+  printf("entre com o valor da altura:\n");
+  scanf("%f", &e_altura);
+
+  s_area = e_base * e_altura ;
+
+  printf("area em [m²]: %.2f\n", s_area);
+  return 0;
+}
